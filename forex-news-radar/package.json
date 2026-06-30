@@ -1,0 +1,21 @@
+{
+  "name": "forex-news-radar",
+  "version": "1.0.0",
+  "description": "Top 10 forex-impacting international news from Google News",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test test/*.test.js test/brokers/*.test.js",
+    "test:watch": "node --test --watch test/*.test.js test/brokers/*.test.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "axios": "^1.7.7",
+    "express": "^4.21.0",
+    "fast-xml-parser": "^4.5.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

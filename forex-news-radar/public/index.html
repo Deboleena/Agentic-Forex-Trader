@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Forex News Radar</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Forex News Radar</h1>
+      <p class="subtitle">Top 10 news + Gemini ratings + 48h price check + paper trades</p>
+      <button id="refresh">Refresh</button>
+      <span id="updated"></span>
+      <span id="next-refresh" class="badge muted"></span>
+      <span id="ai-badge" class="badge"></span>
+      <span id="broker-badge" class="badge"></span>
+    </header>
+
+    <main>
+      <section class="pairs-section">
+        <div class="pairs-header">
+          <h2>Pair signals</h2>
+          <label class="size-input">
+            Order size
+            <input id="trade-units" type="number" min="100" step="100" value="10000" />
+          </label>
+        </div>
+        <p class="hint">Click a pair to expand. Use Buy/Sell to paper-trade at the latest cached price.</p>
+        <div id="pairs-grid" class="pairs-grid"></div>
+      </section>
+
+      <section class="portfolio-section">
+        <h2>Portfolio <span id="portfolio-equity" class="equity"></span></h2>
+        <div id="portfolio-summary" class="portfolio-summary"></div>
+        <div id="portfolio-positions"></div>
+      </section>
+
+      <section class="news-section">
+        <h2>Top headlines</h2>
+        <ol id="news-list" aria-live="polite"></ol>
+        <p id="status"></p>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
