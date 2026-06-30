@@ -1,0 +1,41 @@
+Forex News Radar — chronological log of user prompts in the build conversation.
+
+1. create a node.js application with a frontend to find top ten international news on news.google.com which can impact on foreign currency trading. Put it on a ./Skills folder in Skills.md file.
+
+2. I can not see the node.js application
+
+3. yes
+
+4. Still can not see the node.js application
+
+5. Where is the code?
+
+6. don not put the code inside Skills folder, put in inside Agentic-Forex-Trader
+
+7. I've renamed the SKILLS.md as /Users/deboleenamukhopadhyay/Documents/Agentic-Forex-Trader/Skills/forex-news-rader.md
+
+8. put the nodejs code inside a separate folder inside Agentic-Forex-Trader folder.
+
+9. I want to trade the key FOREX pairs EUR/USD, USD/JPY, GBP/USD, XAU/USD, AUD/USD, USD/CAD based on the top news we will fetch using forex-news-rader. I want to use the Google's ADK to parse these news and receive a 5 point rating: strong buy, weak buy, neutral, weak sale, strong sale. Can you build tools and skill for this task? Modify the UI to show the assessment. I'll provide the API key when you need it.
+
+10. See /Users/deboleenamukhopadhyay/Documents/Agentic-Forex-Trader/token.txt for the token. Remember to add a .gitignore
+
+11. I did not paste directly, it's in a file. Is that risky?
+
+12. Ask for the rationale behind the recommendation to gemini. Show in the ui.
+
+13. How are we creating the overall recommendation? How does it combine news-specific ratings? Also, I need the rationale to be shown per nes per pair, in brief
+
+14. Build me tools and skill to query forex time series for last 48 hours for the key pairs. Then assess whether the gemini recommendation has already been actioned on in the market
+
+15. Write me a README.md documenting how to use the uui
+
+16. Write me a mock to buy/sell the pair using Oanda or ROBINHOOD
+
+17. write all the prompts in a prompts.txt file
+
+18. Create an auto-refresh mechanism in every 5 minutes and keep the manual refresh logic as well.
+
+19. Keep appending all the prompts in prompts.txt
+
+20. Create tests for all components and add how to run the tests in README file.
